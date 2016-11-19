@@ -1,8 +1,25 @@
 body {
-	/*background: url(https://source.unsplash.com/DZqtE4IrBg0);*/
-	background: url(https://source.unsplash.com/QcBAZ7VREHQ);
+	background: url(https://source.unsplash.com/fqkrXYMosT4);
 	background-repeat: no-repeat;
 	background-size: cover;
-	/*background-position: center;*/
+	background-position: center;
 	background-attachment: fixed;
+}
+
+.jumbotron {
+	margin-left: 12%;
+	margin-right: 12%;
+	margin-top: 15%;
+	font-family: "Itim", serif;
+	background-color: #FFFFF0;
+	color: #0D3F64;
+	font-variant-caps: small-caps;
+}
+
+h1, h3 {
+	text-align: center;
+}
+
+span {
+    text-decoration: underline;
 }
