@@ -1,7 +1,8 @@
 var http = require('http')
   , fs   = require('fs')
   , url  = require('url')
-  , port = 8080;
+  , qs   = require('qs')
+  , port = 8080
 
 var server = http.createServer (function (req, res) {
   var uri = url.parse(req.url)
@@ -15,6 +16,10 @@ var server = http.createServer (function (req, res) {
       break
     case '/style.css':
       sendFile(res, 'style.css', 'text/css')
+      break
+    case '/README.md':
+      sendFile(res, 'README.md', 'text/html')
+      break
     default:
       res.end('404 not found')
   }
